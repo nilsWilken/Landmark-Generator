@@ -77,9 +77,15 @@ shared_ptr<LandmarkGraph> LandmarkFactory::compute_lm_graph(
         }
     }
 
+    // if (log.is_at_least_debug()) {
+    //     dump_landmark_graph(task_proxy, *lm_graph, log);
+    // }
     if (log.is_at_least_debug()) {
+        cout << "############################################################################" << endl;
         dump_landmark_graph(task_proxy, *lm_graph, log);
+        cout << "############################################################################" << endl;
     }
+    // exit(0);
     return lm_graph;
 }
 

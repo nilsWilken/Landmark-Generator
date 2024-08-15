@@ -29,6 +29,7 @@ void LandmarkFactoryReasonableOrdersHPS::generate_landmarks(const shared_ptr<Abs
         log << "approx. reasonable orders" << endl;
     }
     approximate_reasonable_orders(task_proxy);
+
 }
 
 void LandmarkFactoryReasonableOrdersHPS::approximate_reasonable_orders(

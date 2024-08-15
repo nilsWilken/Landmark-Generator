@@ -53,6 +53,7 @@ void LandmarkHeuristic::initialize(const plugins::Options &opts) {
             utils::make_unique_ptr<successor_generator::SuccessorGenerator>(
                 task_proxy);
     }
+    exit(0);
 }
 
 bool LandmarkHeuristic::landmark_graph_has_cycle_of_natural_orderings() {
